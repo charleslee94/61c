@@ -1,0 +1,13 @@
+Partner 1 name: Charles Lee
+Partner 1 login: cs61c-ja
+Partner 2 name: Shai Yusov
+Partner 2 login:
+
+CS61C Spring 2014 Project 1-2 Task A Writeup
+
+1. Which version (iterative or recursive) executed more instructions, and why? Please answer in 1-2 sentences.
+ The recursive version took almost twice as long. This is most likely becuase of the fact that it has to store and load the saved registers and the return address each time it calls itself.
+
+
+
+

@@ -1,0 +1,32 @@
+#Setting up registers
+IOR %01 %0 01
+IOR %02 %0 02
+IOR %03 %0 03
+IOR %04 %0 04
+IOR %05 %0 05
+IOR %06 %0 06
+IOR %07 %0 07
+IOR %08 %0 08
+IOR %09 %0 09
+IOR %10 %0 10
+IOR %11 %0 11
+IOR %12 %0 12
+IOR %13 %0 13
+IOR %14 %0 14
+IOR %15 %0 15
+#Actual Testing
+SLL %01 %01 2
+SLR %02 %02 1
+SAR %03 %03 1
+RTL %04 %04 1
+RTR %05 %05 1
+AND %06 %07 01
+SUB %07 %01 %02
+SAVE %08 %sp 04
+LOAD %09 %sp 04
+CMPS %zero %zero
+ADD ?EQ %10 %01 %zero
+FOO:
+ADD %13 %13 1
+CMPS %13 %14
+JUMP ?LE @FOO

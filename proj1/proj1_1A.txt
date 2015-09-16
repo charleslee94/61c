@@ -1,0 +1,28 @@
+Partner 1 name:
+Partner 1 login:
+Partner 2 name:
+Partner 2 login:
+
+CS61C Spring 2014 Project 1 Task A Writeup
+
+1. For each of the test image provided in advanced_tests/, which images are not recognized correctly?
+ Sans_serif_5, serif_5, and serif_8 are not recognized correctly. The other files provided in advanced_tests/ are all recognized correctly.
+
+
+
+
+
+
+2. For each test image listed in the previous question, What is the difference in "digit distances" between the recognized digit and the digit it is supposed to be (e.g. if a digit 3 is recognized as 8, and 3 has a "digit distance" of 10 while 8 has a "digit distance" of 20, then difference in distances is 20 - 10 = 10).
+for sans_serif_5: 8969982
+for serif_8: 4860691
+for serif_5: 7957904
+
+
+
+
+
+
+
+3. Give a one to two sentence explanation on why you think the images mentioned above are recognized incorrectly.
+The combination of a change in font and translation of the image resulted in an incorrect reading. 3 looks similar enough to an 8 to be mistaken by the reading. The sans_serif 5 also looks similar enough to a 6 that such a drastic change in font resulted in a faulty recognization.

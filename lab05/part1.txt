@@ -1,0 +1,30 @@
+Running Part A...
+
+n = 10, 1.000 Gflop/s
+n = 14, 1.372 Gflop/s
+n = 19, 1.524 Gflop/s
+n = 26, 1.465 Gflop/s
+n = 35, 1.531 Gflop/s
+n = 47, 1.550 Gflop/s
+n = 63, 1.563 Gflop/s
+n = 85, 1.452 Gflop/s
+n = 114, 1.436 Gflop/s
+n = 153, 1.510 Gflop/s
+n = 205, 1.086 Gflop/s
+n = 274, 1.513 Gflop/s
+n = 366, 1.415 Gflop/s
+n = 489, 1.254 Gflop/s
+n = 653, 0.885 Gflop/s
+n = 871, 0.226 Gflop/s
+n = 1000, 0.200 Gflop/s
+
+
+./matrixMultiply 2
+Running Part B...
+
+ijk:    n = 1000, 0.195 Gflop/s
+ikj:    n = 1000, 0.090 Gflop/s
+jik:    n = 1000, 0.197 Gflop/s
+jki:    n = 1000, 1.183 Gflop/s
+kij:    n = 1000, 0.090 Gflop/s
+kji:    n = 1000, 1.518 Gflop/s

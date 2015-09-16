@@ -1,0 +1,13 @@
+#first fib number
+IOR %t0 %zero 1
+#second fib number
+IOR %t1 %zero 1
+#nth fibonacci number (+2 because we counted first two already)
+IOR %s0 %zero 10
+LOOP:
+IOR %t3 %t0 %zero
+ADD %t0 %t1 %zero
+ADD %t1 %t3 %t1
+SUB %s0 %s0 1
+CMPS %s0 %zero
+JUMP ?NE @LOOP

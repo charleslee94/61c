@@ -1,0 +1,18 @@
+IOR %01 %zero 10
+IOR %02 %zero 12
+IOR %03 %zero %zero
+IOR %04 %zero 4
+CMPS %01 %01
+JUMP ?EQ @RED
+CMPS %02 %01
+JUMP ?GT @BLUE
+CMPS %01 %02
+JUMP ?LT @GREEN
+
+RED:
+IOR %01 %zero %zero
+BLUE:
+IOR %02 %zero 1
+GREEN:
+IOR %03 %zero 2
+HALT

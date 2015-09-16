@@ -1,0 +1,14 @@
+ADD %t0 %zero 1
+ADD %t1 %zero 5
+LOOP:
+	ADD %t0 %t0 1
+	ADD %t1 %t1 -1
+	CMPS  %t1 %zero
+	JUMP ?NE @LOOP
+CMPS %zero %zero
+CALL ?EQ @COMP
+ADD %t2 %t2 10
+HALT
+COMP:
+ADD %t4 %zero 10
+JUMP %ra

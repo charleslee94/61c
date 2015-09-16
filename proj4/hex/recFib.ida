@@ -1,0 +1,24 @@
+ADD %a0 %a0 6
+FIB:
+	ADD %sp %sp -3
+	SAVE %ra %sp 2
+	SAVE %s0 %sp 1
+	ADD %rv %zero 1
+	CMPS %a0 %zero
+	JUMP ?EQ @FIN
+	ADD %t0 %zero 1
+	CMPS %a0 %t0
+	JUMP ?EQ @FIN
+	ADD %a0 %a0 -1
+	SAVE %a0 %sp 0
+	CALL @FIB
+LOAD %a0 %sp 0
+ADD %a0 %a0 -1
+ADD %s0 %rv %zero
+CALL @FIB
+ADD %rv %rv %s0
+FIN:
+	LOAD %s0 %sp 1
+	LOAD %ra %sp 2
+	ADD %sp %sp 3
+	HALT
